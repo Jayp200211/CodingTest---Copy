@@ -1,8 +1,7 @@
 #Instructions to build the project:
 1-clone the repository
-2-Change to the project directory: cd solution
-3-Install the project dependencies: npm install 
-4-Start the angular application: ng serve
+2-Install the project dependencies: npm install 
+3-Start the angular application: ng serve
 
 # CodingTest
 
