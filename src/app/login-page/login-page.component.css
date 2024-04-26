@@ -1,17 +1,61 @@
-body{
+.flex-container{
+   display: flex;
+   flex-direction: row;
+}
+.bottom-flex-container{
     display: flex;
+    flex-direction: row;
+ }
+.flex-container2{
+    display: flex;
+   flex-direction: row; 
+}
+.animated-div1{
+    background-color:#39ff14;
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+   padding: 20px;
+   margin: 20px;
+
+     font-family: "Lexend";
+}
+.header-text{
+    font-size:52px;
+}
+.image-div{
+    background-color: purple;width: 100%;
+    height: 250px;border-radius: 20px;
+ padding: 20px;margin-top: 20px; margin-right: 20px;
+
+ background-image: url(https://ggie.berkeley.edu/wp-content/uploads/2019/09/Listening_to_Music_Mindfully_1200x630.jpg);
+ background-size: cover;
+}
+.purple-div{
+    background-color: purple;width: 400px;height: 200px;border-radius: 20px;
+ padding: 20px; margin-left : 20px;
+}
+.purple-div-header{
+    font-family: Lexend;
+    font-size: 52px;
+    color: white;
+
+}
+.image-div2{
+    width: 400px;height: 230px;border-radius: 20px;
+    padding: 20px; margin-left : 20px;
+   background-image: url('../../assets/_e4faf085-213f-43ec-9fb9-e6b42c7ef53c.jpeg');
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.button-div{
+    display: flex;
+    flex-direction: column;
+    font-family: Lexend;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #355C7D;
-}
-
-.header svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
+    height: 300px; 
+    padding-left: 20px;
 }
 .LoginBtn{
     position:relative;
@@ -44,10 +88,93 @@ transition: background-color 0.6s ease, color 0.6s ease;
     
   }
 
-  @media(max-width:400px) {
-    .LoginBtn{
-        margin-left:10px;
-        margin-right: 10px;
+  @media(max-width:480px){
+    
+.flex-container{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.bottom-flex-container{
+    flex-direction: column;
+}
+.animated-div1{
+    width:20%;
+}
+.animated-div1 > h1{
+    writing-mode: vertical-rl; 
+    font-size: 24px;
+margin:7px
+}
+.image-div{
+    width: 80%;
+    background-position: center;
+
+}
+.purple-div{
+    width: 70%;
+    height: 140px;
+
+}
+.purple-div-header{
+    font-size: 20px !important;
+}
+.image-div2{
+    width: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 20px;
+    height: 116px;
+}
+.button-div{
+    margin-left:10px;
+    margin-right: 10px;
+    padding-left: 0;
+}
+
+  }
+@media(max-width:768px){
+       
+.flex-container{
+    padding: 0;
+    margin: 0;
+}
+.animated-div1{
+    width:40%;
+}
+.image-div{
+    width: 60%;
+}
+
+}
+@media(max-width:560px){
+    .header-text{
+        font-size: 44px;
     }
    
-  }
+}
+@media(max-width:407px){
+    .purple-div{
+
+    }
+    .purple-div-header{
+        font-size: 16px !important;
+    }
+}
+@media(max-width:1320px){
+
+    .bottom-flex-container{
+        flex-direction: column;
+    }
+   
+}
+@media(max-width:940px)
+{
+    .image-div2{
+        width: 100%;
+        margin-right: 20px;
+    }
+    .purple-div-header{
+        font-size:32px
+    }
+}

@@ -12,6 +12,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FollowersPipe } from './shared/followers.pipe';
 import { ArtistAlbumsComponent } from './artist-albums/artist-albums.component';
 import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
+import { TmNgOdometerModule } from 'odometer-ngx';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -31,7 +32,7 @@ import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
     FormsModule,
     NgbModule,
     NgxSkeletonLoaderModule,
-
+    TmNgOdometerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
