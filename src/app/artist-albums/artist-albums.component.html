@@ -1,4 +1,5 @@
 <div class="body">
+  <!-- property binding -->
 <div class="container" [style.background-color]="getRandomColor()" >
 <img [src]="albums[0]?.images[0]?.url">
   <div class="content">
@@ -44,7 +45,9 @@
 </div>
 <div class="Albums-content" style="background-color: black;">
   <div class="album-info">
-    <ul class="album-list-loader" *ngIf="loading">
+    <ul class="album-list-loader"
+     *ngIf="loading"
+     >
       <li *ngFor="let item of loadersArray" >
         <div class="album-card" >
       <ngx-skeleton-loader
@@ -52,7 +55,7 @@
       [theme]="{ 
         'width':'90%',
         'border-radius': '5px',
-        height: '60%',
+        height: '200px',
         'background-color': 'grey',
         border: 'none',
       }"
